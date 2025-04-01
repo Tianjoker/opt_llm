@@ -1,0 +1,55 @@
+{
+	"clients":{
+        "total": 50,
+        "task":{
+            "task_num":10,
+            "task_pro_var": 1.0,
+            "task_pro_mean": 0.5,
+            "proficiency_rage": [10,20]
+        },
+        "ratio": [3,5,2],
+        "resource":{
+            "B" : 0.5,
+            "Pn" : 0.3,
+            "hn" : -40,
+            "N0" : 1e-8,
+            "fn" : 2,
+            "Cyn" : 20,
+            "vm" : 100,
+            "m" : 1
+        }
+    },
+
+    "server":{
+        "alpha":1.4,
+        "beta":0.8,
+        "select":"basic"
+    },
+    "task":{
+        "block_num": 50,
+        "name": "gpt3",
+        "seed": 123,
+        "size":{
+            "gpt3":{
+                "transformer_num": 108,
+                "size": 90,
+                "act_size":100,
+                "tol_buget": 50
+            },
+            "llama2":{
+                "transformer_num": 108,
+                "size": 90,
+                "act_size":100,
+                "tol_buget": 50
+            },
+            "deepseekv3":{
+                "transformer_num": 108,
+                "act_size":100,
+                "size": 90,
+                "tol_buget": 50
+            }
+        }
+    }
+}
+
+
